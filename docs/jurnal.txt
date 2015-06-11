@@ -1,0 +1,42 @@
+Jurnal
+
+1.  SKPD/STPD/SKRD -> Dokumen Ketetapan
+    a.  Saat ada Ketetapan
+        Piutang
+            Pendapatan LO
+    
+    b.  Saat Realisasi  -> TBP
+        Kas di Bend Penerimaan
+            Piutang
+            
+    c.  Transfer ke KASDA/STS -> STS
+        RK PPKD
+            Kas di Bendahara Penerimaan
+            
+    d.  Diterima di Kasda
+        1.  Kas di Kasda
+                RK SKPD
+            
+        2.  Pendapatan LRA
+                Perubahan SAL
+          
+2.  SPTPD
+    a. Saat Realisasi/TBP
+        Kas di Bendaharan Penerimaan 
+            Pendapatan LO
+            
+    b.  Transfer ke KASDA/STS
+        RK PPKD
+            Kas di Bendahara Penerimaan
+    
+    c.  Diterima di Kasda
+        1.  Kas di Kasda
+                RK SKPD
+            
+        2.  Pendapatan LRA
+                Perubahan SAL
+    
+    Notes:
+        Saat Realisasi harus disebutin apakah berasal dari ketetapan atau bukan
+        
+        

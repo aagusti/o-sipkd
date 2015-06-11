@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /home/eis/syncronize
+./import-csv
+./calc-data

@@ -1,0 +1,58 @@
+id,kode,nama,path,perm_name,disabled,created,create_uid
+200,"ar","Pendapatan","/ar","red",0,"2015-03-08 16:45:45",1
+201,"ar-invoice-transaksi","Ketetapan/Tagihan","/ar/invoice/transaksi","red",0,"2015-03-08 16:45:45",1
+202,"ar-invoice-transaksi-act","Ketetapan/Tagihan Act","/ar/invoice/transaksi/{act}/act","red",0,"2015-03-08 16:45:45",1
+203,"ar-invoice-transaksi-add","Ketetapan/Tagihan Add","/ar/invoice/transaksi/add","red",0,"2015-03-08 16:45:45",1
+204,"ar-invoice-transaksi-edit","Ketetapan/Tagihan Edit","/ar/invoice/transaksi/{id}/edit","red",0,"2015-03-08 16:45:45",1
+205,"ar-invoice-transaksi-delete","Ketetapan/Tagihan Delete","/ar/invoice/transaksi/{id}/delete","red",0,"2015-03-08 16:45:45",1
+206,"ar-invoice-transaksi-posting","Ketetapan/Tagihan Post","/ar/invoice/transaksi/{tipe}/{id}/{tgl}/post","red",0,"2015-03-08 16:45:45",1
+207,"ar-invoice-transaksi-unposting","Ketetapan/Tagihan Unpost","/ar/invoice/transaksi/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+208,"ar-payment-transaksi","Penerimaan","/ar/payment/transaksi","red",0,"2015-03-08 16:45:45",1
+209,"ar-payment-transaksi-act","Penerimaan Act","/ar/payment/transaksi/{act}/act","red",0,"2015-03-08 16:45:45",1
+210,"ar-payment-transaksi-add","Penerimaan Add","/ar/payment/transaksi/add","red",0,"2015-03-08 16:45:45",1
+211,"ar-payment-transaksi-edit","Penerimaan Edit","/ar/payment/transaksi/{id}/edit","red",0,"2015-03-08 16:45:45",1
+212,"ar-payment-transaksi-delete","Penerimaan Delete","/ar/payment/transaksi/{id}/delete","red",0,"2015-03-08 16:45:45",1
+213,"ar-payment-transaksi-posting","Penerimaan Post","/ar/payment/transaksi/{tipe}/{id}/{tgl}/post","red",0,"2015-03-08 16:45:45",1
+214,"ar-payment-transaksi-unposting","Penerimaan Unpost","/ar/payment/transaksi/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+215,"ar-invoice-transaksi-tgl","Rekap Ketetapan Per Tanggal","/ar/invoice/transaksi/tgl","red",0,"2015-03-08 16:45:45",1
+216,"ar-invoice-transaksi-tgl-post","Posting Ketetapan Per Tanggal","/ar/invoice/transaksi/tgl/post","red",0,"2015-03-08 16:45:45",1
+217,"ar-invoice-transaksi-tgl-act","Rekap Ketetapan Per Tanggal Act Act","/ar/invoice/transaksi/tgl/{act}/act","red",0,"2015-03-08 16:45:45",1
+218,"ar-invoice-transaksi-tgl-unpost","Rekap Per Tanggal","/ar/invoice/transaksi/tgl/unpost","red",0,"2015-03-08 16:45:45",1
+219,"ar-payment-transaksi-tgl","Rekap Pembayaran Per Tanggal","/ar/payment/transaksi/tgl","red",0,"2015-03-08 16:45:45",1
+220,"ar-payment-transaksi-tgl-post","Posting Pembayaran Per Tanggal","/ar/payment/transaksi/tgl/post","red",0,"2015-03-08 16:45:45",1
+221,"ar-payment-transaksi-tgl-act","Rekap Pembayaran Per Tanggal Act","/ar/payment/transaksi/tgl/{act}/act","red",0,"2015-03-08 16:45:45",1
+222,"ar-payment-transaksi-tgl-unpost","Unpost Pembayaran Per Tanggal","/ar/payment/transaksi/tgl/unpost","red",0,"2015-03-08 16:45:45",1
+223,"ar-invoice","Ketetapan/Tagihan","/ar/invoice","red",0,"2015-03-08 16:45:45",1
+224,"ar-invoice-act","Act Ketetapan/Tagihan","/ar/invoice/{act}/act","red",0,"2015-03-08 16:45:45",1
+225,"ar-invoice-add","Tambah Ketetapan/Tagihan","/ar/invoice/add","red",0,"2015-03-08 16:45:45",1
+226,"ar-invoice-edit","Edit Ketetapan/Tagihan","/ar/invoice/{id}/edit","red",0,"2015-03-08 16:45:45",1
+227,"ar-invoice-delete","Hapus Ketetapan/Tagihan","/ar/invoice/{id}/delete","red",0,"2015-03-08 16:45:45",1
+228,"ar-invoice-posting","Posting Ketetapan/Tagihan","/ar/invoice/{tipe}/{id}/{tgl}/post","red",0,"2015-03-08 16:45:45",1
+229,"ar-invoice-unposting","Unposting Ketetapan/Tagihan","/ar/invoice/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+230,"ar-tbp","TBP/Penerimaan Bendahara","/ar/tbp","red",0,"2015-03-08 16:45:45",1
+231,"ar-tbp-act","Act TBP/Penerimaan Bendahara","/ar/tbp/{act}/act","red",0,"2015-03-08 16:45:45",1
+232,"ar-tbp-add","Tambah TBP/Penerimaan Bendahara","/ar/tbp/add","red",0,"2015-03-08 16:45:45",1
+233,"ar-tbp-edit","Edit TBP/Penerimaan Bendahara","/ar/tbp/{id}/edit","red",0,"2015-03-08 16:45:45",1
+234,"ar-tbp-delete","Hapus TBP/Penerimaan Bendahara","/ar/tbp/{id}/delete","red",0,"2015-03-08 16:45:45",1
+235,"ar-tbp-posting","Posting TBP/Penerimaan Bendahara","/ar/tbp/{tipe}/{id}/{tgl}/post","red",0,"2015-03-08 16:45:45",1
+236,"ar-tbp-unposting","Unposting TBP/Penerimaan Bendahara","/ar/tbp/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+237,"ar-sts","STS/enerimaan Bendahara","/ar/sts","red",0,"2015-03-08 16:45:45",1
+238,"ar-sts-act","Act STS/Penerimaan Bendahara","/ar/sts/{act}/act","red",0,"2015-03-08 16:45:45",1
+239,"ar-sts-add","Tambah STS/Penerimaan Bendahara","/ar/sts/add","red",0,"2015-03-08 16:45:45",1
+240,"ar-sts-edit","Edit STS/Penerimaan Bendahara","/ar/sts/{id}/edit","red",0,"2015-03-08 16:45:45",1
+241,"ar-sts-delete","Hapus STS/Penerimaan Bendahara","/ar/sts/{id}/delete","red",0,"2015-03-08 16:45:45",1
+242,"ar-sts-posting","Posting STS/Penerimaan Bendahara","/ar/sts/{tipe}/{id}/{tgl}/post","red",0,"2015-03-08 16:45:45",1
+243,"ar-sts-unposting","Unposting STS/Penerimaan Bendahara","/ar/sts/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+244,"ar-invoice-item","Ketetapan/Tagihan","/ar/invoice/item","red",0,"2015-03-08 16:45:45",1
+245,"ar-invoice-item-act","Act Ketetapan/Tagihan","/ar/invoice/item/{ar_invoice_id}/{act}/act","red",0,"2015-03-08 16:45:45",1
+246,"ar-invoice-item-add","Tambah Ketetapan/Tagihan","/ar/invoice/item/add","red",0,"2015-03-08 16:45:45",1
+247,"ar-invoice-item-edit","Edit Ketetapan/Tagihan","/ar/invoice/item/{id}/edit","red",0,"2015-03-08 16:45:45",1
+248,"ar-invoice-item-delete","Hapus Ketetapan/Tagihan","/ar/invoice/item/{id}/delete","red",0,"2015-03-08 16:45:45",1
+249,"ar-invoice-item-posting","Posting Ketetapan/Tagihan","/ar/invoice/item/{tipe}/{id}/{tgl}/post","red",0,"2015-03-08 16:45:45",1
+250,"ar-invoice-item-unposting","Unposting Ketetapan/Tagihan","/ar/invoice/item/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+251,"ar-sts-validasi","Validasi STS/Penerimaan Bendahara","/ar/sts/validasi/{tipe}/{id}/{tgl}/unpost","red",0,"2015-03-08 16:45:45",1
+252,"ar-sts-item","STS/enerimaan Bendahara","/ar/sts/item","red",0,"2015-03-08 16:45:45",1
+253,"ar-sts-item-act","Act STS/Penerimaan Bendahara","/ar/sts/item/{ar_sts_id}/{act}/act","red",0,"2015-03-08 16:45:45",1
+254,"ar-sts-item-add","Tambah STS/Penerimaan Bendahara","/ar/sts/item/add","red",0,"2015-03-08 16:45:45",1
+255,"ar-sts-item-edit","Edit STS/Penerimaan Bendahara","/ar/sts/item/{id}/edit","red",0,"2015-03-08 16:45:45",1
+256,"ar-sts-item-delete","Hapus STS/Penerimaan Bendahara","/ar/sts/item/{id}/delete","red",0,"2015-03-08 16:45:45",1

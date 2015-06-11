@@ -1,0 +1,32 @@
+id,kode,nama,path,perm_name,disabled,created,create_uid
+901,"carousel","Carousel","/carousel","red",0,"2015-03-08 16:45:45",1
+902,"carousel-act","Carousel Action","/carousel/{act}/act","red",0,"2015-03-08 16:45:45",1
+903,"carousel-add","Carousel Add","/carousel/add","red",0,"2015-03-08 16:45:45",1
+904,"carousel-edit","Carousel Edit","/carousel/{id}/edit","red",0,"2015-03-08 16:45:45",1
+905,"carousel-delete","Carousel Delete","/carousel/{id}/delete","red",0,"2015-03-08 16:45:45",1
+906,"dashboard","EIS","/dashboard","red",0,"2015-03-08 16:45:45",1
+907,"dashboard-act","EIS Act","/dashboard/{act}/act","red",0,"2015-03-08 16:45:45",1
+908,"dashboard-calc-all","EIS Calc ALL","/dashboad-calc-all","red",0,"2015-03-08 16:45:45",1
+909,"eis","EIS","/eis","red",0,"2015-03-08 16:45:45",1
+910,"eis-act","EIS Act","/eis/{act}/act","red",0,"2015-03-08 16:45:45",1
+911,"eis-calc-all","EIS Calc ALL","/eis-calc-all","red",0,"2015-03-08 16:45:45",1
+912,"eis-chart","Chart","/eis/chart","red",0,"2015-03-08 16:45:45",1
+913,"eis-chart-act","EIS Chart Action","/eis/chart/{act}/act","red",0,"2015-03-08 16:45:45",1
+914,"eis-chart-add","EIS Chart Add","/eis/chart/add","red",0,"2015-03-08 16:45:45",1
+915,"eis-chart-edit","EIS Chart Edit","/eis/chart/{id}/edit","red",0,"2015-03-08 16:45:45",1
+916,"eis-chart-delete","EIS Chart Delet","/eis/chart/{id}/delete","red",0,"2015-03-08 16:45:45",1
+917,"eis-chart-item","Chart Item","/eis/chart/item/{chart_id}","red",0,"2015-03-08 16:45:45",1
+918,"eis-chart-item-act","EIS Chart Item Action","/eis/chart/item/{chart_id}/{act}/act","red",0,"2015-03-08 16:45:45",1
+919,"eis-chart-item-add","EIS Chart Item Add","/eis/chart/item/{chart_id}/add","red",0,"2015-03-08 16:45:45",1
+920,"eis-chart-item-edit","EIS Chart Item Edit","/eis/chart/item/{chart_id}/{id}/edit","red",0,"2015-03-08 16:45:45",1
+921,"eis-chart-item-delete","EIS Chart Item Delet","/eis/chart/item/{chart_id}/{id}/delete","red",0,"2015-03-08 16:45:45",1
+922,"eis-item","EIS Item","/eis/chart","red",0,"2015-03-08 16:45:45",1
+923,"eis-item-act","EIS Item Action","/eis-item/{act}/act","red",0,"2015-03-08 16:45:45",1
+924,"eis-item-add","EIS Item Add","/eis-item/add","red",0,"2015-03-08 16:45:45",1
+925,"eis-item-edit","EIS Item Edit","/eis-item/{id}/edit","red",0,"2015-03-08 16:45:45",1
+926,"eis-item-delete","EIS Item Delete","/eis-item/{id}/delete","red",0,"2015-03-08 16:45:45",1
+927,"eis-slide","EIS Slide","/eis-slide","red",0,"2015-03-08 16:45:45",1
+928,"eis-slide-act","EIS Slide Act","/eis-slide/{act}/act","red",0,"2015-03-08 16:45:45",1
+929,"eis-slide-add","EIS Slide Add","/eis-slide/add","red",0,"2015-03-08 16:45:45",1
+930,"eis-slide-edit","EIS Slide Edit","/eis-slide/{id}/edit","red",0,"2015-03-08 16:45:45",1
+931,"eis-slide-delete","EIS Slide Delete","/eis-slide/{id}/delete","red",0,"2015-03-08 16:45:45",1

@@ -1,0 +1,37 @@
+<html metal:use-macro="load: ../../templates/main.pt">
+<div metal:fill-slot="nav">
+    <ul class="nav navbar-nav">
+      <li tal:attributes="class request.path == '/app' and 'active'">
+          <a href="/ar"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Transaksi <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/ar/invoice/transaksi">Ketetapan/Tagihan</a></li>
+          <li><a href="/ar/invoice/transaksi/tgl">Rekap Ketetapan/Tagihan/Tanggal</a></li>
+          <li><a href="/ar/payment/transaksi">Realisasi Penerimaan</a></li>
+          <li><a href="/ar/payment/transaksi/tgl">Rekap Realisasi/Tanggal</a></li>
+        </ul>
+      </li>  
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pendapatan <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/ar/invoice">Ketetapan</a></li>
+          <li><a href="/ar/tbp">TBP</a></li>
+          <li><a href="/ar/sts">STS</a></li>
+          <li><a href="/ar/kasda">Kasda</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+</div>
+
+<div metal:fill-slot="content">
+    <div metal:define-slot="content"></div> 
+</div>
+<div metal:fill-slot="scripts">
+    <div metal:define-slot="scripts"></div> 
+</div>
+</html>
+

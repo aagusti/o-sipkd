@@ -1,0 +1,28 @@
+<html metal:use-macro="load: base.pt">
+<div metal:fill-slot="content">
+
+<!-- Main component for a primary marketing message or call to action -->
+<div class="well">
+<h1>o-SIPKD</h1>
+<p><img src="/static/img/pyramid.png" class="img-float img-thumbnail"/>
+Selamat Datang di Module Akuntnsi <code>${project}</code>
+<p>Module ini digunakan untuk melakukan proses akuntansi.
+   <ul>
+      <li>Jurnal
+       <ol>
+          <li>Jurnal SKPD</li>
+          <li>Jurnal SKPKD</li>
+       </ol>
+      </li>
+      <li>Referensi Tabel Pendukung
+       <ol>
+          <li>Rekening APBD</li>
+          <li>Rekening SAP</li>
+          <li>Mapping Rekening APBD -> SAP </li>
+       </ol>
+       </li>
+    </ul>
+</div><!--well-->
+
+</div>
+</html>
