@@ -1,4 +1,5 @@
 import os
+import subprocess
 import sys
 import transaction
 from sqlalchemy import (
@@ -88,7 +89,22 @@ def create_schemas(engine):
     for schema in ['apbd', 'eis']:
         create_schema(engine, schema)
 
+def read_file(filename):
+    f = open(filename)
+    s = f.read()
+    f.close()
+    return s
+
 def main(argv=sys.argv):
+    def alembic_run(ini_file):
+        s = read_file(ini_file)
+        s = s.replace('{{db_url}}', settings['sqlalchemy.url'])
+        f = open('alembic.ini', 'w')
+        f.write(s)
+        f.close()
+        subprocess.call(command)
+        os.remove('alembic.ini')
+
     if len(argv) != 2:
         usage(argv)
     
@@ -97,20 +113,12 @@ def main(argv=sys.argv):
     settings = get_appsettings(config_uri)
     if settings['static_files']:
         mkdir(settings['static_files'])
-    
     # Create Ziggurat tables
-    alembic_ini_file = 'alembic.ini'
-    if not os.path.exists(alembic_ini_file):
-        alembic_ini = ALEMBIC_CONF.replace('{{db_url}}',
-                                           settings['sqlalchemy.url'])
-        f = open(alembic_ini_file, 'w')
-        f.write(alembic_ini)
-        f.close()
     bin_path = os.path.split(sys.executable)[0]
-    alembic_bin = os.path.join(bin_path, 'alembic')
-    command = '%s upgrade head' % alembic_bin
-    os.system(command)
-    os.remove(alembic_ini_file)
+    alembic_bin = os.path.join(bin_path, 'alembic') 
+    command = (alembic_bin, 'upgrade', 'head')    
+    alembic_run('alembic.ini.tpl')
+    alembic_run('alembic_upgrade.ini.tpl')
     # Insert data
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)

@@ -27,6 +27,8 @@ requires=['pyramid>=1.5a2',
           'pyjasper',
           'requests',
           'pyramid_rpc',
+          'paste',
+          'pyramid_translogger',
          ]
 
 if sys.argv[1:] and sys.argv[1] == 'develop-use-pip':

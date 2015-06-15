@@ -95,10 +95,11 @@ def insert_(fixtures):
             tbl = T()
             
             tbl.from_dict(d)
-            if not tbl.created:
-                tbl.created = datetime.now()
-            if not tbl.create_uid:
-                tbl.create_uid = 1
+            if tablename != 'users':
+                if not tbl.created:
+                    tbl.created = datetime.now()
+                if not tbl.create_uid:
+                    tbl.create_uid = 1
             
             if tablename == 'users' and 'password' in d:
                 tbl.password = d['password']
