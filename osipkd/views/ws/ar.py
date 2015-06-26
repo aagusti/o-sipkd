@@ -85,13 +85,13 @@ def set_invoice(request, data):
                             kode  = row['rekening_kd']).scalar()
                 rekening_kd = rekening_id and row['rekening_kd']
                     
-            invoice = DBSession.query(ARInvoiceItem).filter_by(
+            invoice = DBSession.query(ARInvoiceTransaksi).filter_by(
                             kode     = row['rekening_kd'],
                             tahun    = row['tahun'],
                             ref_kode = row['ref_kode']
                             ).first()
             if not invoice:
-                invoice = ARInvoiceItem()
+                invoice = ARInvoiceTransaksi()
                 invoice.created = datetime.now()
                 invoice.create_uid = 1
                 
@@ -132,9 +132,57 @@ def set_payment(request, data):
     resp = auth_from_rpc(request)
     if resp['code'] != 0:
         return resp
-    
-    #row_dicted = json.loads(rows.text)
-    for row in data:
+    unit_id = 0
+    unit_kd = ""
+    rekening_id = 0
+    rekening_kd = ""
+    try:
+        for row in data:
+            if row['unit_kd']!=unit_kd:
+                unit_id = DBSession.query(Unit.id).filter_by(
+                                    kode  = row['unit_kd']).scalar()
+                unit_kd = unit_id and row['unit_kd']
+                
+            if row['rekening_kd']!=rekening_kd:
+                rekening_id = DBSession.query(Rekening.id).filter_by(
+                            kode  = row['rekening_kd']).scalar()
+                rekening_kd = rekening_id and row['rekening_kd']
+                    
+            payment = DBSession.query(ARPaymentTransaksi).filter_by(
+                            kode     = row['rekening_kd'],
+                            tahun    = row['tahun'],
+                            ref_kode = row['ref_kode']
+                            ).first()
+            if not payment:
+                payment = ARPaymentTransaksi()
+                payment.created = datetime.now()
+                payment.create_uid = 1
+                
+            payment.kode         = row['rekening_kd']        
+            payment.nama         = row['nama']        
+            payment.tahun        = row['tahun']       
+            payment.amount       = row['amount']             
+            payment.ref_kode     = row['ref_kode']    
+            payment.ref_nama     = row['ref_nama']    
+            payment.tanggal      = row['tanggal']               
+            payment.kecamatan_kd = row['kecamatan_kd']          
+            payment.kecamatan_nm = row['kecamatan_nm']          
+            payment.kelurahan_kd = row['kelurahan_kd']          
+            payment.kelurahan_nm = row['kelurahan_nm']          
+            payment.is_kota      = row['is_kota']               
+            payment.sumber_data  = row['sumber_data']           
+            payment.sumber_id    = row['sumber_id']             
+            payment.unit_id      = unit_id             
+            payment.rekening_id  = rekening_id             
+            #invoice.notes        = row['notes']             
+            DBSession.add(payment)
+            DBSession.flush()
+    except:
+        DBSession.rollback()
+        return dict(code=CODE_DATA_INVALID, message='Data Invalid')
+        
+    try:
+        DBSession.commit()
+    except:
         pass
- 
-    return dict(code=CODE_OK, message='Data Submitted')    
+    return dict(code=CODE_OK, message='Data Submitted')
