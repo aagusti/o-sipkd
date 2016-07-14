@@ -251,12 +251,11 @@
         
       var tb_array = [
       '<div class="btn-group pull-left">',
-      '	<button id="btn_add"    class="btn btn btn-primary" type="button">Tambah</button>',
-      '	<button id="btn_edit"   class="btn btn btn-primary" type="button">Edit</button>',
-      '	<button id="btn_delete" class="btn btn btn-danger"  type="button">Hapus</button>',
-      '	<button id="btn_posting" class="btn btn btn-success" type="button">Posting Transaksi</button>',
+      '	<button id="btn_posting" class="btn btn btn-success" type="button">Posting</button>',
       '	<button id="btn_unposting" class="btn btn btn-info" type="button">Un-Posting</button>',
       ' <button id="btn_close"  class="btn btn-warning"     type="button">Tutup</button>',
+      ' <button id="btn_csv"  class="btn btn-primary"     type="button">CSV</button>',
+      ' <button id="btn_pdf"  class="btn btn-primary"     type="button">PDF</button>',      
       '	&nbsp;',
       '</div>',
       ];
@@ -281,20 +280,6 @@
       /***********************************************************************        
       BUTTON
       ***********************************************************************/
-      $('#btn_add').click(function () {
-        window.location = '/ar/payment/transaksi/add';
-        });
-
-      $('#btn_edit').click(function () {
-        if (mID) window.location = '/ar/payment/transaksi/'+mID+'/edit';
-        else alert('Pilih Baris yang akan di edit');
-        });
-
-      $('#btn_delete').click(function () {
-        if (mID) window.location = '/ar/payment/transaksi/'+mID+'/delete';
-        else alert('Pilih Baris yang akan di hapus');
-        });        
-
       $("#btn_close").click(function () {
         window.location = '/skpd';
         return false;

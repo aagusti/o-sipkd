@@ -92,7 +92,7 @@ class KegiatanSub(NamaModel, Base):
     __table_args__ = {'extend_existing':True, 'schema' : 'apbd',}
 
     tahun_id    = Column(BigInteger, ForeignKey("apbd.tahuns.id"),    nullable=False)
-    unit_id     = Column(Integer,    ForeignKey("apbd.units.id"),     nullable=False) 
+    unit_id     = Column(Integer, ForeignKey("apbd.units.id"),     nullable=False) 
     kegiatan_id = Column(BigInteger, ForeignKey("apbd.kegiatans.id"), nullable=False)
 
     kegiatans = relationship("Kegiatan", backref="kegiatansubs")

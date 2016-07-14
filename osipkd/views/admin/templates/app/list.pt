@@ -16,6 +16,7 @@
         </tbody>
     </table>
   </div>
+  
   <div metal:fill-slot="scripts">
     <script>
       var mID;
@@ -115,4 +116,5 @@
         })
     </script>
   </div>
+  
 </html>
