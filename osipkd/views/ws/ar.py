@@ -114,14 +114,15 @@ def set_invoice(request, data):
             #invoice.notes        = row['notes']             
             DBSession.add(invoice)
             DBSession.flush()
-    except:
+    except Exception e:
+        print str(e)
         DBSession.rollback()
         return dict(code=CODE_DATA_INVALID, message='Data Invalid')
         
     try:
         DBSession.commit()
-    except:
-        pass
+    except Exception e:
+        print str(e)
     return dict(code=CODE_OK, message='Data Submitted')
     
 ##############        
